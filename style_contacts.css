@@ -1,0 +1,138 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav{
+    font-weight: 600;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(33, 33, 33, 0.813);
+    z-index: 100;
+    backdrop-filter: blur(50px);
+}
+
+nav name a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    
+}
+
+nav name{
+    transition: transform 0.2s ease;
+}
+
+nav name:hover{
+    transform: scale(1.05);
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    transition: transform 0.2s ease;
+    
+}
+
+nav ul li a{
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+nav ul li:hover{
+    transform: scale(1.05);
+}
+
+nav ul li:hover a{
+    color: white;
+}
+
+.name{
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 80px;
+    width: 100%;
+    height: 100%;
+    padding-top: 250px;
+    color: white;
+    background-color: black;
+    mix-blend-mode: multiply;
+    z-index: -1;
+    letter-spacing: 10px;
+    transition: 0.2s ease;
+}
+
+.name:hover{
+    letter-spacing: 30px;
+}
+
+.contact{
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(172, 172, 172);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 400%;
+}
+
+.contact img{
+    vertical-align: middle;
+}
+
+.banner{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 800px;
+}
+
+
+.liquid-video{
+    position: absolute;
+    z-index: -3;
+}
+
+.background-video{
+    position: fixed;
+    opacity: 0.1;
+    filter: blur(100px);
+    transform: scale(1.5);
+    z-index: 0;
+}

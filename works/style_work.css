@@ -1,0 +1,107 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+}
+
+*{
+    font-family: 'Pretendard';
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+body{
+    /* transform: translateY(-100vh); */
+    display: flexbox;
+    margin: auto;
+    width: 60vw;
+    background-color: rgb(30, 30, 30);
+    font-size: 22px;
+    color: rgb(230, 230, 230);
+    line-height: 200%;
+}
+
+body.loaded {
+    /* transform: translateY(0); */
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.photos{
+    display: flex;
+    justify-content: center;
+}
+
+.photo{
+    margin: 10px 10px;
+    width: auto;
+    height: auto;
+}
+
+.banner{
+    position: absolute;
+    width: 100vw;
+    height: 500px;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 60px;
+    margin-top: 550px;
+    margin-bottom: -25px;
+    line-height: 130%;
+}
+
+h4 {
+    color: rgb(200, 200, 200);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+h5 {
+    color: rgb(168, 168, 168);;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 200%;
+    font-size: 18px;
+    margin-left: 10px;
+    white-space: pre-wrap;
+}
+
+.end{
+    height: 500px;
+}
+
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: auto;
+    z-index: -10;
+    perspective: 1px;
+    transform: translateZ(-2px);
+    filter: blur(100px);
+    /* perspective: 1000px; */
+}
+
+.back::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.829);
+    z-index: 100;
+}

@@ -1,0 +1,249 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard';
+    overscroll-behavior: none;
+    transition: transform 0.2s ease, margin-top 0.3s ease;
+}
+
+#container {
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: blur(3px);
+}
+
+nav{
+    font-weight: 600;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(33, 33, 33, 0.813);
+    z-index: 100;
+    backdrop-filter: blur(50px);
+}
+
+nav name a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    
+}
+
+nav name{
+    transition: transform 0.2s ease;
+}
+
+nav name:hover{
+    transform: scale(1.05);
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    transition: transform 0.2s ease;
+    
+}
+
+nav ul li a{
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+nav ul li:hover{
+    transform: scale(1.05);
+}
+
+nav ul li:hover a{
+    color: white;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.content div{
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    line-height: 130%;
+}
+
+.content a{
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.214);
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+    transition: 0.2s ease;
+    backdrop-filter: blur(10px);
+}
+
+.content a:hover{
+    color: rgb(0, 0, 0);
+    background-color: black;
+    transform: scale(1.05);
+    background-color: rgb(255, 255, 255);
+}
+
+/* //////////////////////////////////// */
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard';
+    text-decoration: none;
+    transition: transform 0.2s ease, margin-top 0.3s ease;
+} */
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-direction: column; */
+}
+
+.card{
+    width: 700px;
+    height: 400px;
+    margin: 100px 10px;
+    /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.104); */
+    z-index: 1;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+}
+
+.card a {
+    display: flex;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    background-color: white;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro{
+    height: 150px;
+    width: 700px;
+    position: absolute;
+    top:100%;
+    background-color: rgb(246, 246, 246);
+    /* transform: translateY(-100%); */
+    z-index: -1;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(103%);
+}
+
+.card:hover .intro{
+    /* transform: translateY(0%); */
+}
+
+h1{
+    font-weight: 700;
+    font-size: 40px;
+    padding: 3% 0% 0% 5%;
+    color: rgb(61, 61, 61);
+}
+
+p{
+    font-weight: 500;
+    font-size: 15px;
+    padding: 2% 0% 5% 5%;
+    color: rgb(157, 157, 157);
+    line-height: 150%;
+}
+
+div .name{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+}
+
+/* //////////////////////// */
+.contact {
+    position: relative;
+    width: 100vw;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.113);
+    text-align: left;
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact h1{
+    font-weight: 700;
+    font-size: 30px;
+    padding: 3%;
+    color: rgb(220, 220, 220);
+    width: 100%;
+}
+
+.contact h4 {
+    font-weight: 400;
+    font-size: 15px;
+    padding: 3%;
+    color: rgb(147, 147, 147);
+    line-height: 200%;
+    width: 100%;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
