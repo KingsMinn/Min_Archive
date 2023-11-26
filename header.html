@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <name><a href="index.html">Min Archive</a></name>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+<style>
+    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard';
+    overscroll-behavior: none;
+    transition: transform 0.2s ease, margin-top 0.3s ease;
+}
+
+#container {
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: blur(3px);
+}
+
+@media (min-width: 768px) {
+    nav{
+        font-weight: 600;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 15px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(33, 33, 33, 0.813);
+        z-index: 100;
+        backdrop-filter: blur(50px);
+    }
+    
+    nav name a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        
+    }
+    
+    nav name{
+        transition: transform 0.2s ease;
+    }
+    
+    nav name:hover{
+        transform: scale(1.05);
+    }
+    
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 40px;
+        transition: transform 0.2s ease;
+        
+    }
+    
+    nav ul li a{
+        font-weight: 500;
+        text-decoration: none;
+        color: rgb(200, 200, 200);
+        font-size: 12px;
+        transition: transform 0.2s ease;
+    }
+    
+    nav ul li:hover{
+        transform: scale(1.05);
+    }
+    
+    nav ul li:hover a{
+        color: white;
+    }
+}
+
+@media (max-width: 767px) {
+    nav{
+        font-weight: 600;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 15px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(33, 33, 33, 0.813);
+        z-index: 100;
+        backdrop-filter: blur(50px);
+    }
+    
+    nav name a{
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        
+    }
+    
+    nav name{
+        transition: transform 0.2s ease;
+    }
+    
+    nav name:hover{
+        transform: scale(1.05);
+    }
+    
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 40px;
+        transition: transform 0.2s ease;
+        
+    }
+    
+    nav ul li a{
+        font-weight: 500;
+        text-decoration: none;
+        color: rgb(200, 200, 200);
+        font-size: 12px;
+        transition: transform 0.2s ease;
+    }
+    
+    nav ul li:hover{
+        transform: scale(1.05);
+    }
+    
+    nav ul li:hover a{
+        color: white;
+    }
+}
+</style>
